@@ -1,0 +1,662 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost and </title>
+  <style>
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</body>
+</html>
+  <title>Lost and Found - Ramgarh Engineering College</title>
+  <link
+    href="<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #f7f1e1;
+      color: #2e2d2b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+/* Login Bar */
+.login-bar {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    .login-bar input[type="text"],
+    .login-bar input[type="password"] {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      border: 1px solid var(--beige);
+      border-radius: 5px;
+    }
+    .login-bar button {
+      padding: 0.5rem 1rem;
+      background-color: var(--forest-green);
+      color: var(--ivory);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-bar button:hover {
+      background-color: var(--warm-brown);
+    }
+
+    /* Navigation Bar */
+    nav {
+      margin-left: auto;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      font-weight: bold;
+    }
+    
+    /* Vintage color palette */
+    :root {
+      --ivory: #f7f1e1;
+      --beige: #ded2b1;
+      --forest-green: #274931;
+      --navy-blue: #1e3557;
+      --warm-brown: #6e5841;
+    }
+/* Animation for the welcome message */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    /* Header */
+    header {
+      background-color: var(--beige);
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1.5rem;
+      border-bottom: 2px solid var(--forest-green);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo img {
+      height: 100px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 5px;
+      box-shadow: 0 0 6px var(--forest-green);
+    }
+    header h1 {
+      flex: 1;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: var(--forest-green);
+      font-weight: 900;
+      font-size: 2.4rem;
+      margin: 0;
+      padding: 0 1rem;
+      user-select: none;
+    }
+
+    <header>
+  <div class="logo">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYv82bKXTCXPIAPfCqfNqeYwe1hgl_dmr6A&s"
+      alt="Ramgarh Engineering College Logo"
+      loading="lazy"
+    />
+  </div>
+  <h1>Ramgarh Engineering College - Ramgarh, Jharkhand</h1>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#lost-items">Lost Items</a></li>
+      <li><a href="#found-items">Found Items</a></li>
+      <li><a href="#report">Report Item</a></li>
+    </ul>
+  </nav>
+</header>
+
+    main {
+      flex-grow: 1;
+      width: 100%;
+      max-width: 1024px;
+      margin: 1rem auto 2rem;
+      padding: 0 1rem;
+    }
+    /* Home Section */
+    .home h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 2px var(--beige);
+    }
+    .home p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.5;
+      text-shadow: 0 0 3px var(--beige);
+    }
+    .buttons {
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background-color: var(--forest-green);
+      color: var(--ivory);
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.7rem 1.8rem;
+      border: none;
+      border-radius: 30px;
+      margin: 0 1em;
+      cursor: pointer;
+      box-shadow: 2px 3px 7px rgba(39, 73, 49, 0.6);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      user-select: none;
+      text-decoration: none;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: var(--warm-brown);
+      outline: none;
+    }
+
+    /* Carousel Placeholder */
+    .carousel {
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 1px solid var(--beige);
+      box-shadow: 3px 3px 12px var(--beige);
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      filter: brightness(0.85);
+      transition: filter 0.3s ease;
+    }
+    .carousel img:hover {
+      filter: brightness(1);
+    }
+
+    /* Sections for Lost & Found Items */
+    section {
+      margin-top: 3rem;
+    }
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: var(--navy-blue);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--forest-green);
+      padding-bottom: 0.4rem;
+    }
+
+    /* Search and filter */
+    .search-bar {
+      width: 100%;
+      max-width: 360px;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: 2px solid var(--beige);
+      border-radius: 30px;
+      margin-bottom: 1rem;
+      box-shadow: inset 1px 1px 5px #ccc;
+      font-family: inherit;
+    }
+    label {
+      font-weight: 700;
+      margin-right: 0.6rem;
+      color: var(--warm-brown);
+      font-size: 1rem;
+    }
+    select {
+      padding: 0.45rem 1rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: 2px solid var(--beige);
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: inset 1px 1px 5px #ccc;
+      color: var(--forest-green);
+      font-weight: 700;
+    }
+    .filter {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    /* Item Grid & Cards */
+    .item-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .item-card {
+      background: var(--ivory);
+      border: 1px solid var(--beige);
+      border-radius: 12px;
+      box-shadow: 3px 3px 10px rgba(110, 88, 65, 0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .item-card:hover {
+      box-shadow: 5px 7px 20px rgba(39, 73, 49, 0.6);
+    }
+    .item-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 2px solid var(--beige);
+    }
+    .item-card .item-content {
+      padding: 1rem 1rem 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .item-card h3 {
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 0.3rem 0;
+      color: var(--forest-green);
+      font-size: 1.2rem;
+      user-select: none;
+    }
+    .item-card .item-meta {
+      font-size: 0.9rem;
+      color: var(--warm-brown);
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+      user-select: none;
+    }
+    .item-card p {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+      flex-grow: 1;
+      user-select: text;
+    }
+
+    /* Claim button for found items */
+    .claim-btn {
+      margin-top: 1rem;
+      align-self: flex-start;
+      padding: 0.5rem 1.3rem;
+      background-color: var(--navy-blue);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 700;
+      font-family: inherit;
+      box-shadow: 2px 2px 10px rgba(30, 53, 87, 0.5);
+      transition: background-color 0.3s ease;
+    }
+    .claim-btn:hover,
+    .claim-btn:focus {
+      background-color: var(--forest-green);
+      outline: none;
+    }
+
+    /* Report form */
+    .report form {
+      background: var(--ivory);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 4px 4px 15px rgba(110, 88, 65, 0.3);
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      font-family: inherit;
+    }
+    .report form input[type="text"],
+    .report form input[type="email"],
+    .report form input[type="date"],
+    .report form input[type="file"],
+    .report form textarea {
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: 2px solid var(--beige);
+      font-size: 1rem;
+      font-family: inherit;
+      box-shadow: inset 1px 1px 5px #ccc;
+      resize: vertical;
+    }
+    .report form textarea {
+      min-height: 100px;
+    }
+    .report form button {
+      background-color: var(--forest-green);
+      color: var(--ivory);
+      border: none;
+      padding: 0.9rem 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 3px 3px 12px rgba(39, 73, 49, 0.8);
+      transition: background-color 0.3s ease;
+      user-select: none;
+      align-self: center;
+      max-width: 180px;
+    }
+    .report form button:hover,
+    .report form button:focus {
+      background-color: var(--warm-brown);
+      outline: none;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--beige);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+      color: var(--forest-green);
+      border-top: 2px solid var(--forest-green);
+    }
+    footer a {
+      font-weight: 700;
+      color: var(--navy-blue);
+    }
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* Responsive Typography */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+      }
+      .home h2 {
+        font-size: 1.5rem;
+      }
+      .buttons .btn {
+        margin: 0 0.5rem 1rem;
+        font-size: 1rem;
+      }
+      .item-card img {
+        height: 140px;
+      }
+      .item-grid {
+        grid-template-columns: 1fr;
+      }
+      .report form {
+        padding: 1rem;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOYv82bKXTCXPIAPfCqfNqeYwe1hgl_dmr6A&s"
+        alt="Ramgarh Engineering College Logo"
+        loading="lazy"
+      />
+    </div>
+    <h1>Ramgarh Engineering College - Ramgarh, Jharkhand</h1>
+  </header>
+  <main>
+    <!-- Home -->
+    <section class="home" aria-label="Home section welcoming users">
+      <h2>Welcome to the Lost and Found portal of Ramgarh Engineering College</h2>
+      <p><strong style="color: maroon; font-family: 'Ariel', sans-serif;">Lost something? Let us help you find it.</strong></p>
+       <p>
+        Here, students and faculty can report lost items, browse found items,
+        and help reconnect belongings with their rightful owners.
+      </p>
+      <div class="buttons">
+        <a href="#report" class="btn">Report Lost Item</a>
+        <a href="#found-items" class="btn">Browse Found Items</a>
+      </div>
+    </section>
+
+    <!-- Lost Items -->
+    <section id="lost-items" aria-label="Lost Items Section">
+      <h2>Lost Items</h2>
+      <input aria-label="Search lost items" type="search" class="search-bar" placeholder="Search lost items..." />
+      <div class="filter">
+        <label for="category-lost">Filter by category:</label>
+        <select id="category-lost" aria-controls="lost-items-grid">
+          <option value="all">All</option>
+          <option value="bags">Bags</option>
+          <option value="electronics">Electronics</option>
+          <option value="id-cards">ID Cards</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="item-grid" id="lost-items-grid" role="list">
+        <!-- Sample lost item cards with images -->
+        <article class="item-card" role="listitem" tabindex="0">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Black backpack with side pockets"
+            loading="lazy"
+          />
+          <div class="item-content">
+            <h3>Black Backpack</h3>
+            <div class="item-meta">Lost on 15 April 2025 - Main Library</div>
+            <p>Found scattered books and notes inside. Possibly left during study hours.</p>
+          </div>
+        </article>
+
+        <article class="item-card" role="listitem" tabindex="0">
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0QDxASDw8QEA8PEA0NDxUQDxAPExAPFRUXFxYRFRUaHCsgGBomGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NFQ0NFysZHxk4MjgtOC00Kys3LS8uLjgyKy0rNy0rLTcrLCsrKy03KywtKy03KysrKysuOC0rNywrLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgECAwQFBwj/xAA8EAACAgEBBAYHBQYHAAAAAAAAAQIDEQQFEiExBhMyUXGBIkFCYXKhsQcjM5HBFENSgtHhFSQ0YnSSsv/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAwDAQACEQMRAD8A9wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWxsi+Uk/BplwGK7UVw7c4x8Wl8jn3bdoXZUp+CwvmcnUbcmrJqVcZbs5x5tcnj3lq2vQ+1QvLdl+iA7ENu0vnGa8k/1M0dsad+214xl/Q4a1mifOEo+TX0Zi6rTS5ajHxRa/oBKadZTPs2Rb7s8S7U6qqtb1tkK4tpJznGCy+SyyKrQRfZuql/NggXSj7PNpajU23VOmcJ7rgnZxS3YpxWeC4pgeuQ25oZTnCOqoc64uycVdBuEE0nKXHgstG5p767IqVc4zg+UoSUovwa4Hzdd0D23B8dHLdXLq5ws+jMul0vSHT7ldMNbTGubsjFOyutSfN/wvPv8AeB9IAgFXTXaMXi3Zly73CWntXysT+R0qOmiazPT2w79+ucP0aAloIfP7SNlR/EvhHjjhNN58DqaXpZs+zsXRfr7UG/NJ5QHcBpx2pp3+8XmpL9DNDV0vlZB/zIDMCkZJ8mn4cSoAAAAAAAAAAAAAAIJ0z2zqadV1cZrq3XXNRlGLWXlP6E7POPtHjjV1vv08PlOf9gOdHbsn2qa3wbe71kXhc32ja0m2nLO5G+O7FzfV6jlFc3jC7+8h+1tNdbXu0Xy09qlmNilZDHBppuCcsNPHDvMmy67IUVRte9ZGEYzeXLekuGcviwJkrd/08t7/AKeZc3njl+8qma2hf3UPhRsFFxUsKkFxdGTXJteHAsNbU7S01UZysurhGpxjY3OKUJS7Kl3N59YHShq7Vysn/wBmZobUvXt58VF/oc6i+FkVOucZwksxlCSlGS701zMuQOitr2+0oS8Y/wByq2lB9qiHlw/Q5wA342aPj/l93e7W6o8fHvMcdFszeU1VGE1yl1MN5eElHJqgDqdVQ+Vy81gqtFnlZB+ZyyoHWezpLlJfk0WS0d2c5y+9SeTnRm1ybXg2jJHVWLlOXm8gbyeqjylZ5Tb/AFD2nqocHOX80Yv6o1Y6+3+LPikY9S3OWX60vDkB2Nm7atnbGE92Sk93hHDT9TySEh+yoYuq+OJMAAAAAAAAAB579pscXad99di/KS/qehEC+1KP+ll/yI/+GBBp2RisyaS720l+ZWMk+TyvdxMNknjKrrtcXGShbhwk0+Us+os2fU4wUVVCp708QpXopNt8Ei1OiVbMf3MPB/Vm3k0NkP7mPucl82boFxUtyVA4XTfa89JopzreLZyjRU/4ZSzmS96ipNe9IhX+E2z2PVCudatslqNrXxnNqdlME4xkuHHhuvi1xaJR9pWhldoVutLqr6bG3yjF5rcn3JdZlvuTOZqLqLXqKqLK5K3/AA/YmmUJxb/Z0lK6xJezuyms8vQIOf0Ro1+z5Ruk6/2SyFV+pr66O/XTZwjqHW+MWvW/WotcccPUJTSaTeHJ7q98sN4/JM846dXSq02tbxGWs1FGlpSlGTWk08E88HwTlvcP9yJ66bHXTjHWV9XPEspOSg4tNriu0wM1espllRtrbSjJ4nFtRljdbWeCeVjxM5H5bIujGEViUYKninHMtyVLzGE4tQeK3njh8OGeWx+zWQhpluScqnW24tcIqaco8OCe6vUmnhxWE0B2Qc/Ze83a3vpOWFGzrG1hy9LMklxyvRjwW6vedACpUtKgVKlpXIFTPL1eEfojXNiXq8I/RAbezfxq/jiS0iWzfxq/jiS0AAAAAAAAAWzhGSxJJruaTRcAObqNgaGzt6alvvUIxf5o58+hegypVq2mS4p12yTT92ckiAHnu0tkw0lnVwlKcXHrMzxnMm88l7jVJf0g2NO+cZwkuEVBpr3t5z5nCt2HqY+yn4PH1A5yKpmazRXR51y8ln6GBprmsePAopbXGcZRmlKM4uMk1lSi1hp+RCtndC56PWS1FLVtVVN89PBvFivcWo1vPBrDliWe7PeTdMqiDzfop0CvV0b9coxUJK1QUlOVlieU5tcFHPHGXk9LyWgDlW7Pv37HCSSlbVZzaclGTeG1jCSa4NvO7jguBbXHVRlX+KopwUsylZvPer323l4WN/DeFzwl6+wioFxVMtKgXAtRUCpUoAKmzJ8F4R+iNUyamzG78MfogOhsx/fVfGiXEK2NPN9XxImoAAAAAAAAAAAAAAAAFsoJ80n4rJjnpKnwcIvyMwA51uxNLL92l8PA0rejFL7MpR+f1O8AItb0XsXZsi/FGnbsHUx9ne+F5JqAPP7NFdHtVyXln6GFprmmvFYPRmYbNLVLnCL8kB5+VJpbsTTS9jHgzUt6NVPszkvFZAixU7lvRqxdmcX4mpbsTUx9jPg8gc8ZL5UTXOLyWNNc1+YFSzVQlKyKXJQrfyLsmeybW7hLsw9XHl3gbOx68X1fEiZkV2Fpbp2xnJYhBt59/dyJUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbOEXzSfikzXs2dRLnXHy9H6G0AOVbsHTvlvL8n9UX6fYtUWnL08JJZWFhd/edIAUSS4LgkVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z"
+            alt="Silver USB Flash Drive"
+            loading="lazy"
+          />
+          <div class="item-content">
+            <h3>USB Flash Drive</h3>
+            <div class="item-meta">Lost on 20 March 2025- Computer Lab</div>
+            <p>Contains important project files. Please contact if found.</p>
+          </div>
+        </article>
+
+        <article class="item-card" role="listitem" tabindex="0">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/051/124/277/non_2x/modern-student-id-card-template-design-vector.jpg"
+            alt="Student ID card with photo"
+            loading="lazy"
+          />
+          <div class="item-content">
+            <h3>Student ID Card</h3>
+            <div class="item-meta">Lost on 28 March 2025 - Canteen</div>
+            <p>ID card with name and student number. Important for college access.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Found Items -->
+    <section id="found-items" aria-label="Found Items Section">
+      <h2>Found Items</h2>
+      <div class="item-grid" id="found-items-grid" role="list">
+        <!-- Sample found item cards with images and claim buttons -->
+        <article class="item-card" role="listitem" tabindex="0">
+          <img
+            src="https://scarters.com/cdn/shop/files/Primary_Wallet_Black.jpg?v=1708520487"
+            alt="Found black wallet with zipper"
+            loading="lazy"
+          />
+          <div class="item-content">
+            <h3>Black Wallet</h3>
+            <div class="item-meta">Found on 22 April 2025 - Near Admin Block</div>
+            <button class="claim-btn" aria-controls="claim-form-1" aria-expanded="false" aria-label="Claim Black Wallet">
+              Claim
+            </button>
+            <form id="claim-form-1" class="claim-form" hidden>
+              <fieldset>
+                <legend>Claim Contact Form</legend>
+                <label for="claim-name-1">Your Name:</label>
+                <input type="text" id="claim-name-1" name="claim-name-1" required />
+                <label for="claim-contact-1">Contact Info:</label>
+                <input type="text" id="claim-contact-1" name="claim-contact-1" required />
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+
+        <article class="item-card" role="listitem" tabindex="0">
+          <img
+            src="https://images.meesho.com/images/products/451386303/ora5j_256.webp"
+            alt="Found white earphones" height="50" width="25"
+            loading="lazy"
+          />
+          <div class="item-content">
+            <h3>White Earphones</h3>
+            <div class="item-meta">Found on 19 April 2025 - Gymnasium</div>
+            <button class="claim-btn" aria-controls="claim-form-2" aria-expanded="false" aria-label="Claim White Earphones">
+              Claim
+            </button>
+            <form id="claim-form-2" class="claim-form" hidden>
+              <fieldset>
+                <legend>Claim Contact Form</legend>
+                <label for="claim-name-2">Your Name:</label>
+                <input type="text" id="claim-name-2" name="claim-name-2" required />
+                <label for="claim-contact-2">Contact Info:</label>
+                <input type="text" id="claim-contact-2" name="claim-contact-2" required />
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Report Section -->
+    <section id="report" class="report" aria-label="Report Lost or Found Item">
+      <h2>Report a Lost or Found Item</h2>
+      <form>
+        <input type="text" placeholder="Your Name" name="name" required autocomplete="name" />
+        <input type="email" placeholder="Your Contact Email" name="contact" required autocomplete="email" />
+        <input type="text" placeholder="Item Type" name="type" required autocomplete="off" />
+        <textarea placeholder="Description of Item" name="description" required rows="4"></textarea>
+        <input type="text" placeholder="Location" name="location" required autocomplete="off" />
+        <input type="date" name="date" required />
+        <input type="file" accept="image/*" name="image" />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for checking in. Your help in returning lost items is appreciated!</p>
+    <p>Contact us at: <a href="mailto:support@rec.edu.in">support@rec.edu.in</a></p>
+  </footer>
+
+  <script>
+    // Toggle claim forms on button click
+    document.querySelectorAll('.claim-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const formId = btn.getAttribute('aria-controls');
+        const form = document.getElementById(formId);
+        if (form.hasAttribute('hidden')) {
+          form.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.textContent = 'Close Form';
+        } else {
+          form.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.textContent = 'Claim';
+        }
+      });
+    });
+
+    // Form submission stub for claim forms - prevent reload and show alert
+    document.querySelectorAll('.claim-form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Claim form submitted! Staff will contact you soon.');
+        form.setAttribute('hidden', '');
+        const btn = document.querySelector([aria-controls="${form.id}"]);
+        if (btn) {
+          btn.setAttribute('aria-expanded', 'false');
+          btn.textContent = 'Claim';
+        }
+        form.reset();
+      });
+    });
+
+    // Report form stub
+    document.querySelector('.report form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for reporting the item! Our staff will review and update the records.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
